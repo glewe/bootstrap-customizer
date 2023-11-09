@@ -1,0 +1,35 @@
+$gray-100: #f5f5f5;
+$gray-200: #ebebeb;
+$gray-300: #d4d4d4;
+$gray-400: #cccccc;
+$gray-500: #b4b4b4;
+$gray-600: #878787;
+$gray-700: #666666;
+$gray-800: #333333;
+$gray-900: #212529;
+
+$blue:    #3588c9; // LH Sky Blue 1
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #ef7d60; // LH Salmon Pink
+$red:     #cf3231; // LH Red
+$orange:  #ef7c00; // LH Orange
+$yellow:  #ffad00; // LH Yellow
+$green:   #49a66a; // LH Forest Green 2
+$teal:    #28a39d; // LH Turquoise 1
+$cyan:    #75bce9; // LH Sky Blue 2
+
+//$danger: #cf3231;
+//$dark: #282828;
+//$info: #28a39e;
+//$light: #f5f5f5;
+//$primary: #3588c9;
+//$secondary: #666666;
+//$success: #49a66a;
+//$warning: #ffad00;
+
+.btn-primary,
+.btn-secondary,
+.btn-success {
+  color: #fff !important;
+}
