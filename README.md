@@ -4,7 +4,7 @@
 
 # Bootstrap Customizer
 
-**Bootstrap Customizer** provides an NPM setup that allows you to quickly build your own Bootstrap theme based on Bootstrap's SASS and JS. Simply change a base color for example and Bootstrap is recompiled based on it.
+**Bootstrap Customizer** provides an NPM setup that allows you to quickly build your own Bootstrap theme based on Bootstrap's SASS and JS. Simply change a base color for example and recompile Bootstrap based on it.
 
 Include [Bootstrap](https://getbootstrap.com)'s source Sass and compiled JavaScript bundle via npm. Also includes the [Autoprefixer](https://github.com/postcss/autoprefixer) for cross-browser CSS, [Stylelint](https://stylelint.io) for Sass code quality, and [Popper](https://popper.js.org), a peer dependency of Bootstrap's JS used to position dropdowns, popovers, and tooltips.
 
@@ -28,9 +28,9 @@ Edit the file `src\scss\bootstrap-custom.scss`. Scroll down to the section that 
  * Bootstrap custom styles
  */
 ```
-In that section you can either directly change styles or inmport a file of your liking doing so.
+In that section you can either directly change styles or import a file that contains your changes.
 
-In this example, we want to change the color red that is used for Bootstrap's 'danger' objects. Just enter the value of your liking, e.g.:
+In this example, we want to change the color red that is used for Bootstrap's 'danger' objects. Just enter the new value of your liking, e.g.:
 
 ```scss
 $red: #cf3231;
