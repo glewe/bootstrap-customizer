@@ -33,3 +33,7 @@ $cyan:    #75bce9; // LH Sky Blue 2
 .btn-success {
   color: #fff !important;
 }
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  color: #fff !important;
+}
