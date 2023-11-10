@@ -16,13 +16,15 @@
   },
   "scripts": {
     "build": "npm-run-all js css html",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css",
+    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
     "css-lint": "stylelint src/scss/",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
     "css-prefix": "postcss --use autoprefixer --map --replace \"dist/css/*.css\" \"!dist/css/*.rtl*.css\" \"!dist/css/*.min.css\"",
-    "css": "npm-run-all css-compile css-prefix css-minify",
-    "html": "npm-run-all html-copy html-beautify",
+    "css-timestamp": "node src/config/scss.config.mjs",
+    "css": "npm-run-all css-timestamp css-compile css-prefix css-minify",
+    "html": "npm-run-all html-build html-beautify",
     "html-beautify": "js-beautify --config .jsbeautifyrc.json --file \"dist/**/*.html\"",
+    "html-build": "ejs-cli --base-dir src/html/ \"index.html\" -o dist/",
     "html-copy": "node src/config/html.config.mjs",
     "js": "npm-run-all js-compile js-lint js-minify",
     "js-compile": "rollup --config src/config/rollup.config.cjs --sourcemap --context window",
@@ -38,6 +40,8 @@
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.1",
+    "ejs": "^3.1.9",
+    "ejs-cli": "^2.2.3",
     "http-server": "^14.1.1"
   },
   "devDependencies": {

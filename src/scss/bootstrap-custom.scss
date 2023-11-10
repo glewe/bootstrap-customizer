@@ -1,3 +1,15 @@
+@import "timestamp";
+
+/*!
+ * Bootstrap Customizer
+ * Version: #{$version}
+ * Copyright 2023-#{$year} George Lewe <https://www.lewe.com>
+ * Source: <https://github.com/glewe/bootstrap-customizer>
+ * Licensed under MIT <https://github.com/glewe/bootstrap-customizer/blob/master/LICENSE>
+ * Compiled: #{$timestamp}
+ */
+
+// ----------------------------------------------------------------------------
 // Override Bootstrap's Sass default variables
 //
 // Nearly all variables in Bootstrap are written with the `!default` flag.
@@ -8,40 +20,51 @@
 // CSS without writing _new_ styles. For example, you can either change
 // `$body-color` or write more CSS that override's Bootstrap's CSS like so:
 // `body { color: red; }`.
+//
+//
+// Note: Double-slash comments in this file will be removed by the compiler
+//
 
-/*
- * Toggle global options
- */
+// ----------------------------------------------------------------------------
+// Here you can toggle global options
+//
 $enable-gradients: false;
 $enable-shadows: false;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 
-/*
- * Include functions first
- */
+// ----------------------------------------------------------------------------
+// Include functions first
+//
 @import "bootstrap/scss/functions";
 
-/*
- * Add your customizations here (overwriting defaults)
+/* ----------------------------------------------------------------------------
+ * Bootstrap custom styles
  */
-//$body-color: #333;
-//$body-bg: #fff;
-//$border-radius: .4rem;
-
+//
+// Add your customizations here (overwriting defaults).
+// For example:
+// $body-color: #333;
+// This will set the body color variable. When bringing in Bootstrap later, the
+// following default setting will not be executed since the variable is already
+// set:
+// $body-color: $gray-900 !default;
+//
 @import "lh-colors";
 
+/* ----------------------------------------------------------------------------
+ * Bootstrap styles
+ */
 //
-// Bring in Bootstrap
-//
-
 // Option 1
+// Import all of Bootstrap's SCSS. This will compile a complete custom
+// Bootstrap style sheet.
 //
-// Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
-
-// Option 2
 //
+// Option 2
 // Import just the styles you need. Note that some stylesheets are required no matter what.
+// This will only compile those styles you enable below.
+//
 //@import "bootstrap/scss/variables";
 //@import "bootstrap/scss/variables-dark";
 //@import "bootstrap/scss/maps";
@@ -49,7 +72,6 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 //@import "bootstrap/scss/utilities";
 //@import "bootstrap/scss/root";
 //@import "bootstrap/scss/reboot";
-//
 //@import "bootstrap/scss/type";
 //@import "bootstrap/scss/images"; // Not required
 //@import "bootstrap/scss/containers";
@@ -79,16 +101,19 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 //@import "bootstrap/scss/spinners"; // Not required
 //@import "bootstrap/scss/offcanvas"; // Requires transitions
 //@import "bootstrap/scss/placeholders"; // Not required
-//
-//// Helpers
 //@import "bootstrap/scss/helpers"; // Not required
 
+// ----------------------------------------------------------------------------
 // Utilities
+//
+/* ----------------------------------------------------------------------------
+ * Bootstrap Utilities
+ */
 @import "bootstrap/scss/utilities/api";
 
-//
-// Custom styles
-//
+/* ----------------------------------------------------------------------------
+ * Additional custom styles
+ */
 @import "icon-list";
 
 body {
