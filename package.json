@@ -11,9 +11,6 @@
     "url": "https://github.com/glewe/bootstrap-customizer.git"
   },
   "license": "MIT",
-  "stackblitz": {
-    "startCommand": "npm start"
-  },
   "scripts": {
     "build": "npm-run-all js css html img",
     "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
