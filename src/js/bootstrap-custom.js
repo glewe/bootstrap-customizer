@@ -9,6 +9,6 @@ import '../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
  */
 
 // Create an example popover
-document.querySelectorAll('[data-bs-toggle="popover"]').forEach(popover => {
-  new bootstrap.Popover(popover)
-})
+// document.querySelectorAll('[data-bs-toggle="popover"]').forEach(popover => {
+//   new bootstrap.Popover(popover)
+// })

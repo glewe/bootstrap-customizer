@@ -12,6 +12,7 @@ nbproject/private
 *.DS_Store
 *.log
 /.cache/
+.cache/
 
 # build output
 dist/

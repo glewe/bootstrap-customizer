@@ -1,13 +1,17 @@
-$blue:    #0060b0; // Lewe Primary
-$orange:  #ff9400; // Lewe Primary Complementary
-$yellow:  #ffc000; // Lewe Secondary Complementary
+$blue: #0060b0 !default; // Lewe Primary
+$orange: #ff9400 !default; // Lewe Primary Complementary
+$yellow: #ffc000 !default; // Lewe Secondary Complementary
 
 .btn-primary,
 .btn-secondary,
 .btn-success {
-  color: #fff !important;
+  color: #ffffff !important;
 }
 
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-  color: #fff !important;
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  color: #ffffff !important;
 }
