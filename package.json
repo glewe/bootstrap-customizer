@@ -2,7 +2,7 @@
   "title": "Bootstrap Customizer",
   "name": "bootstrap-customizer",
   "description": "Customize Bootstrap based on its source Sass and compiled JavaScript bundle via npm.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "George Lewe",
   "homepage": "https://www.lewe.com",
   "private": true,
@@ -13,7 +13,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npm-run-all js css html img",
-    "css-compile": "sass --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
+    "css-compile": "sass --quiet --style expanded --source-map --embed-sources --no-error-css --load-path=node_modules src/scss/bootstrap-custom.scss:dist/css/bootstrap-custom.css src/scss/bsc-tooltips.scss:dist/css/bsc-tooltips.css",
     "css-copy": "node src/config/css.config.mjs",
     "css-lint": "stylelint src/scss/",
     "css-minify": "cleancss -O1 --format breakWith=lf --with-rebase --source-map --source-map-inline-sources --output dist/css/ --batch --batch-suffix \".min\" \"dist/css/*.css\" \"!dist/css/*.min.css\" \"!dist/css/*rtl*.css\"",
@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
-    "bootstrap": "^5.3.7",
+    "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1",
     "ejs": "^3.1.10",
     "ejs-cli": "^2.2.3",
@@ -52,19 +52,20 @@
     "clean-css-cli": "^5.6.3",
     "console-stamp": "3.1.2",
     "eslint": "^9.29.0",
-    "glob": ">=11.1.0",
+    "glob": "^13.0.0",
     "globals": "^16.2.0",
-    "js-beautify": "^1.15.2",
+    "js-beautify": "^1.15.4",
     "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
-    "rollup": "^4.43.0",
-    "sass": "^1.89.2",
-    "sirv-cli": "^2.0.2",
-    "stylelint": "^16.20.0",
+    "rollup": "^4.53.3",
+    "sass": "^1.94.2",
+    "sirv-cli": "^3.0.1",
+    "stylelint": "^16.26.0",
     "stylelint-config-twbs-bootstrap": "^16.1.0",
     "terser": "^5.43.0",
     "typescript-eslint": "^8.34.1"
   }
 }
+

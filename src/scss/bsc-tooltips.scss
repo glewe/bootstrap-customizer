@@ -1,12 +1,12 @@
-@import "timestamp";
+@use "timestamp" as timestamp;
 
 /*!
  * Bootstrap CSS Tooltips
- * Version: #{$version}
+ * Version: #{timestamp.$version}
  * Copyright 2023-#{$year} George Lewe <https://www.lewe.com>
  * Source: <https://github.com/glewe/bootstrap-css-tooltips>
  * Licensed under MIT <https://github.com/glewe/bootstrap-css-tooltips/blob/master/LICENSE>
- * Compiled: #{$timestamp}
+ * Compiled: #{timestamp.$timestamp}
  */
 
 // ----------------------------------------------------------------------------

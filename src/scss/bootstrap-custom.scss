@@ -1,12 +1,15 @@
-@import "timestamp";
+@use "bootstrap/scss/bootstrap" as *;
+@use "timestamp" as timestamp;
+@use "lewe-colors";
+@use "icon-list";
 
 /*!
  * Bootstrap Customizer
- * Version: #{$version}
- * Copyright 2023-#{$year} George Lewe <https://www.lewe.com>
+ * Version: #{timestamp.$version}
+ * Copyright 2023-#{timestamp.$year} George Lewe <https://www.lewe.com>
  * Source: <https://github.com/glewe/bootstrap-customizer>
  * Licensed under MIT <https://github.com/glewe/bootstrap-customizer/blob/master/LICENSE>
- * Compiled: #{$timestamp}
+ * Compiled: #{timestamp.$timestamp}
  */
 
 // ----------------------------------------------------------------------------
@@ -32,11 +35,6 @@ $enable-gradients: false !default;
 $enable-shadows: false !default;
 $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !default;
 
-// ----------------------------------------------------------------------------
-// Include functions first
-//
-@import "bootstrap/scss/functions";
-
 /* ----------------------------------------------------------------------------
  * Bootstrap custom styles
  */
@@ -49,7 +47,6 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !default;
 // set:
 // $body-color: $gray-900 !default;
 //
-@import "lewe-colors";
 
 /* ----------------------------------------------------------------------------
  * Bootstrap styles
@@ -59,7 +56,6 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !default;
 // Import all of Bootstrap's SCSS. This will compile a complete custom
 // Bootstrap style sheet.
 //
-@import "bootstrap/scss/bootstrap";
 //
 // Option 2
 // Import just the styles you need. Note that some stylesheets are required no matter what.
@@ -110,12 +106,10 @@ $offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !default;
 /* ----------------------------------------------------------------------------
  * Bootstrap Utilities
  */
-@import "bootstrap/scss/utilities/api";
 
 /* ----------------------------------------------------------------------------
  * Additional custom styles
  */
-@import "icon-list";
 
 body {
   padding: 1.5rem;
