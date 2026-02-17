@@ -39,3 +39,4 @@ pnpm-debug.log*
 sonar-project.properties
 sonarscan.cmd
 .scannerwork
+.cache/.eslintcache
