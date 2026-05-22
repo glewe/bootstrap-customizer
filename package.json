@@ -59,7 +59,7 @@
     "js-beautify": "^1.15.4",
     "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.5.6",
+    "postcss": "^8.5.10",
     "postcss-cli": "^11.0.1",
     "qs": ">=6.14.2",
     "rollup": "^4.59.0",
@@ -71,9 +71,10 @@
     "typescript-eslint": "^8.34.1"
   },
   "overrides": {
-    "brace-expansion": ">=5.0.5",
-    "fast-uri": ">=3.1.2",
+    "brace-expansion": ">=5.0.6",
+    "fast-uri": ">=3.1.1",
     "follow-redirects": ">=1.16.0",
+    "js-cookie": ">=3.0.7",
     "minimatch": ">=10.2.3",
     "picomatch": ">=4.0.4"
   }
