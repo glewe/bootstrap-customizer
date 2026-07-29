@@ -55,7 +55,7 @@
     "eslint": "^9.29.0",
     "glob": "^13.0.0",
     "globals": "^16.2.0",
-    "immutable": ">=5.1.5",
+    "immutable": ">=5.1.8",
     "js-beautify": "^1.15.4",
     "nodemon": "^3.1.10",
     "npm-run-all": "^4.1.5",
@@ -71,11 +71,11 @@
     "typescript-eslint": "^8.34.1"
   },
   "overrides": {
-    "brace-expansion": ">=5.0.6",
-    "fast-uri": ">=3.1.1",
+    "brace-expansion": ">=5.0.8",
+    "fast-uri": ">=4.1.1",
     "follow-redirects": ">=1.16.0",
     "js-cookie": ">=3.0.7",
-    "js-yaml": ">=4.2.0",
+    "js-yaml": ">=5.2.2",
     "minimatch": ">=10.2.3",
     "picomatch": ">=4.0.4"
   }
